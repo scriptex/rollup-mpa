@@ -1,19 +1,24 @@
 {
-    "name": "<NAME>",
-    "version": "<VERSION>",
-    "description": "<DESCRIPTION>",
-    "scripts": {},
-    "keywords": [],
-    "author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-    "repository": "https://github.com/scriptex/initial-commit",
-    "bugs": {
-      "url": "https://github.com/scriptex/initial-commit/issues",
-      "email": "scriptex.bg@gmail.com"
-    },
-    "license": "MIT",
-    "dependencies": {},
-    "devDependencies": {},
-    "browserslist": [],
-    "main": "<MAIN>",
-    "private": true
+	"name": "rollup-template",
+	"version": "0.0.1",
+	"description": "A starter template for web applications using Rollup as a module bundler",
+	"scripts": {},
+	"keywords": [
+		"Rollup",
+		"Web App",
+		"Starter",
+		"Boilerplate"
+	],
+	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
+	"repository": "https://github.com/scriptex/rollup-template",
+	"bugs": {
+		"url": "https://github.com/scriptex/rollup-template/issues",
+		"email": "scriptex.bg@gmail.com"
+	},
+	"license": "MIT",
+	"dependencies": {},
+	"devDependencies": {},
+	"browserslist": [],
+	"main": "src/js/index.js",
+	"private": true
 }

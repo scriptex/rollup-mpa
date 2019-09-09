@@ -40,7 +40,7 @@ renovate.json
 tslint.json
 ts-config.json
 postcss.config.js
-webpack.config.js
+rollup.config.js
 _config.yml
 _.config.yml
 

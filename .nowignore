@@ -12,7 +12,7 @@ _config.yml
 .whitesource
 package.json
 renovate.json
-webpack.config.js
+rollup.config.js
 yarn.lock
 
 *.appcache
