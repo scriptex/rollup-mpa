@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "A starter template for web applications using Rollup as a module bundler",
 	"scripts": {
-		"start": "export NODE_ENV=development && rollup -c --watch",
+		"start": "export NODE_ENV=development && rollup -c -w",
 		"build": "export NODE_ENV=production && rollup -c"
 	},
 	"keywords": [
@@ -56,7 +56,10 @@
 		"stylelint-config-recommended": "^3.0.0",
 		"stylelint-scss": "^3.11.1"
 	},
-	"browserslist": [],
+	"browserslist": [
+		"> 1%",
+		"last 2 versions"
+	],
 	"main": "dist/main.js",
 	"private": true
 }

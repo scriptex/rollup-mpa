@@ -28,7 +28,7 @@ export default [
 				syntax: 'scss'
 			}),
 			postcss({
-				modules: true,
+				extract: true,
 				plugins: [easyImport(), postcssUrl({ url: 'rebase' }), flexbugsFixes(), autoprefixer()],
 				extensions: ['.css', '.scss', '.sass'],
 				minimize: isProd,
@@ -65,11 +65,24 @@ export default [
 				browsersync({
 					host: 'localhost',
 					port: 3000,
-					open: true,
-					watch: true,
-					files: ['*.html', '*.php', 'src/**/*'],
-					proxy: 'localhost',
-					notify: false
+					open: 'external',
+					files: ['**/*.php', '**/*.html', './dist/app.css', './dist/app.js'],
+					ghostMode: {
+						clicks: false,
+						scroll: true,
+						forms: {
+							submit: true,
+							inputs: true,
+							toggles: true
+						}
+					},
+					snippetOptions: {
+						rule: {
+							match: /<\/body>/i,
+							fn: (snippet, match) => `${snippet}${match}`
+						}
+					},
+					proxy: 'localhost'
 				})
 		],
 		external: 'stylelint'
