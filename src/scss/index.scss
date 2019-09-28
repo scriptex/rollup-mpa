@@ -1,1 +1,6 @@
-// HERE BE UNICORNS
+// External dependencies
+@import '~itscss';
+
+// Sprite
+@import 'sprite';
+@include sprites($spritesheet-sprites);

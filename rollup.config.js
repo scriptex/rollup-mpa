@@ -7,6 +7,7 @@ import stylelint from 'rollup-plugin-stylelint';
 import { uglify } from 'rollup-plugin-uglify';
 import { eslint } from 'rollup-plugin-eslint';
 import browsersync from 'rollup-plugin-browsersync';
+import spritesmith from 'rollup-plugin-sprite';
 
 import postcssUrl from 'postcss-url';
 import easyImport from 'postcss-easy-import';
@@ -34,6 +35,20 @@ export default [
 				minimize: isProd,
 				parser: 'postcss-scss',
 				syntax: 'postcss-scss'
+			}),
+			spritesmith({
+				src: {
+					cwd: './src/images/sprite',
+					glob: '**/*.png'
+				},
+				target: {
+					image: './dist/sprite.png',
+					css: './src/scss/_sprite.scss'
+				},
+				cssImageRef: '../sprite.png',
+				output: {
+					image: './dist/sprite.png'
+				}
 			})
 		]
 	},
