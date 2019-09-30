@@ -3,8 +3,9 @@
 	"version": "0.0.1",
 	"description": "A starter template for web applications using Rollup as a module bundler",
 	"scripts": {
-		"start": "export NODE_ENV=development && rollup -c -w",
-		"build": "export NODE_ENV=production && rollup -c"
+		"clear": "rm -rf dist",
+		"start": "export NODE_ENV=development && yarn clear && rollup -c -w",
+		"build": "export NODE_ENV=production && yarn clear && rollup -c"
 	},
 	"keywords": [
 		"Rollup",
@@ -38,8 +39,9 @@
 		"node-sass": "4.12.0",
 		"npm-run-all": "4.1.5",
 		"postcss": "7.0.18",
-		"postcss-easy-import": "3.0.0",
 		"postcss-flexbugs-fixes": "4.1.0",
+		"postcss-import": "12.0.1",
+		"postcss-preset-env": "6.7.0",
 		"postcss-scss": "2.0.0",
 		"postcss-url": "8.0.0",
 		"rollup": "1.21.4",

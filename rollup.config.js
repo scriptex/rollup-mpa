@@ -1,3 +1,7 @@
+import fs from 'fs';
+import path from 'path';
+import crypto from 'crypto';
+
 import babel from 'rollup-plugin-babel';
 import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
@@ -9,12 +13,19 @@ import { eslint } from 'rollup-plugin-eslint';
 import browsersync from 'rollup-plugin-browsersync';
 import spritesmith from 'rollup-plugin-sprite';
 
+import atImport from 'postcss-import';
+import preseEnv from 'postcss-preset-env';
 import postcssUrl from 'postcss-url';
-import easyImport from 'postcss-easy-import';
 import autoprefixer from 'autoprefixer';
 import flexbugsFixes from 'postcss-flexbugs-fixes';
 
 const isProd = process.env.NODE_ENV === 'production';
+
+const sha256 = data =>
+	crypto
+		.createHash('sha256')
+		.update(data, 'binary')
+		.digest('hex');
 
 export default [
 	{
@@ -30,7 +41,26 @@ export default [
 			}),
 			postcss({
 				extract: true,
-				plugins: [easyImport(), postcssUrl({ url: 'rebase' }), flexbugsFixes(), autoprefixer()],
+				plugins: [
+					atImport(),
+					postcssUrl({
+						url(asset) {
+							const { pathname } = asset;
+							const abspath = path.resolve(__dirname, pathname.substr(1));
+							const basename = path.basename(abspath).replace(/[^.]+/, sha256(path.basename(abspath)));
+							const destpath = path.join(__dirname, 'dist');
+
+							if (!fs.existsSync(path.join(destpath, basename))) {
+								fs.copyFileSync(abspath, path.join(destpath, basename));
+							}
+
+							return path.join('.', basename);
+						}
+					}),
+					preseEnv({ stage: 0 }),
+					flexbugsFixes(),
+					autoprefixer()
+				],
 				extensions: ['.css', '.scss', '.sass'],
 				minimize: isProd,
 				parser: 'postcss-scss',
