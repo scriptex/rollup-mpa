@@ -1,12 +1,32 @@
-[![GitHub release](https://img.shields.io/github/release/scriptex/rollup-template.svg)](https://github.com/scriptex/rollup-template/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/scriptex/rollup-template.svg)](https://github.com/scriptex/rollup-template/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/rollup-template.svg)](https://github.com/scriptex/rollup-template/commits/master)
 [![Build Status](https://travis-ci.org/scriptex/rollup-template.svg?branch=master)](https://travis-ci.org/scriptex/rollup-template)
 [![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/rollup-template/README.md)](https://github.com/scriptex/rollup-template/)
 
-# Initial Commit
+---
+:construction::construction:
+# This is still work in progress
+:construction::construction:
+---
 
-A starter template for web applications using Rollup as a module bundler
+# Rollup MPA
+
+> A starter template for web applications using Rollup as a module bundler.
+
+## About
+
+This repository serves as a starter template for creating multiple page applications using Rollup as a module bundler.
+A module bundler is a JavaScript (in this case) module which bundles your JS/CSS modules in one file, optimizes their size, minifies them and does many more things.
+This starter template provides:
+- Latest EcmaScript/JavaScript support
+- SASS pre-processor for stylesheets
+- PostCSS post-processor for stylesheets
+- PNG sprites
+- SVG sprites (TODO)
+- PWA capabilities (TODO)
+- minification of the generated (CSS and JS) bundles
+- tree shaking
+- stylesheet assets managements (copy assets referenced in the imported stylesheets - fonts, images, etc.)
 
 ## Support this project
 
