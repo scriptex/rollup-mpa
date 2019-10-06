@@ -1,6 +1,6 @@
 {
-	"name": "rollup-template",
-	"version": "0.0.1",
+	"name": "rollup-mpa",
+	"version": "1.0.0",
 	"description": "A starter template for web applications using Rollup as a module bundler",
 	"scripts": {
 		"clear": "rm -rf dist",
@@ -24,9 +24,9 @@
 		"Boilerplate"
 	],
 	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"repository": "https://github.com/scriptex/rollup-template",
+	"repository": "https://github.com/scriptex/rollup-mpa",
 	"bugs": {
-		"url": "https://github.com/scriptex/rollup-template/issues",
+		"url": "https://github.com/scriptex/rollup-mpa/issues",
 		"email": "scriptex.bg@gmail.com"
 	},
 	"license": "MIT",
