@@ -5,7 +5,17 @@
 	"scripts": {
 		"clear": "rm -rf dist",
 		"start": "export NODE_ENV=development && yarn clear && rollup -c -w",
-		"build": "export NODE_ENV=production && yarn clear && rollup -c"
+		"build": "export NODE_ENV=production && yarn clear && rollup -c",
+		"lint": "yarn lint:js && yarn lint:ts && yarn lint:css",
+		"lint:js": "eslint './src/**/*.js'",
+		"lint:ts": "tslint -p tsconfig.json -c tslint.json 'src/**/*.ts'",
+		"lint:css": "stylelint src/**/*.scss",
+		"pwa": "create-pwa --icon=\"./src/images/favicon/icon.png\" --launch=\"./src/images/favicon/launch.png\"",
+		"optisize": "optisize --src=\"./src/images\"",
+		"html": "php index.php > index.html",
+		"critical": "critical index.html > dist/critical.css",
+		"rm-html": "rm index.html",
+		"prod": "yarn build && yarn html && yarn critical && yarn rm-html"
 	},
 	"keywords": [
 		"Rollup",
@@ -35,7 +45,10 @@
 		"@babel/plugin-syntax-dynamic-import": "7.2.0",
 		"@babel/plugin-syntax-import-meta": "7.2.0",
 		"@babel/preset-env": "7.6.2",
+		"@three11/optisize": "1.0.0",
 		"autoprefixer": "9.6.1",
+		"create-pwa": "2.2.0",
+		"critical": "1.3.6",
 		"node-sass": "4.12.0",
 		"npm-run-all": "4.1.5",
 		"postcss": "7.0.18",
@@ -55,11 +68,17 @@
 		"rollup-plugin-sass": "1.2.2",
 		"rollup-plugin-sprite": "0.1.2",
 		"rollup-plugin-stylelint": "0.0.4",
+		"rollup-plugin-typescript": "1.0.1",
 		"rollup-plugin-uglify": "6.0.3",
 		"rollup-watch": "4.3.1",
 		"stylelint": "11.0.0",
 		"stylelint-config-recommended": "3.0.0",
-		"stylelint-scss": "3.11.1"
+		"stylelint-scss": "3.11.1",
+		"ts-node": "8.4.1",
+		"tslib": "1.10.0",
+		"tslint": "5.20.0",
+		"tslint-config-prettier": "1.18.0",
+		"typescript": "3.6.3"
 	},
 	"browserslist": [
 		"> 1%",

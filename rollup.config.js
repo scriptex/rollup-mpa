@@ -10,6 +10,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import stylelint from 'rollup-plugin-stylelint';
 import { uglify } from 'rollup-plugin-uglify';
 import { eslint } from 'rollup-plugin-eslint';
+import typescript from 'rollup-plugin-typescript';
 import browsersync from 'rollup-plugin-browsersync';
 import spritesmith from 'rollup-plugin-sprite';
 
@@ -20,6 +21,7 @@ import autoprefixer from 'autoprefixer';
 import flexbugsFixes from 'postcss-flexbugs-fixes';
 
 const isProd = process.env.NODE_ENV === 'production';
+const isTypeScript = fs.existsSync('./src/scripts/index.ts');
 
 const sha256 = data =>
 	crypto
@@ -29,14 +31,14 @@ const sha256 = data =>
 
 export default [
 	{
-		input: 'src/scss/index.scss',
+		input: 'src/styles/index.scss',
 		output: {
 			file: 'dist/app.css',
 			format: 'es'
 		},
 		plugins: [
 			stylelint({
-				include: ['src/**/*.css'],
+				include: ['src/**/*.css', 'src/**/*.scss', 'src/**/*.sass'],
 				syntax: 'scss'
 			}),
 			postcss({
@@ -73,7 +75,7 @@ export default [
 				},
 				target: {
 					image: './dist/sprite.png',
-					css: './src/scss/_sprite.scss'
+					css: './src/styles/_sprite.scss'
 				},
 				cssImageRef: '../sprite.png',
 				output: {
@@ -83,7 +85,7 @@ export default [
 		]
 	},
 	{
-		input: 'src/js/index.js',
+		input: isTypeScript ? 'src/scripts/index.ts' : 'src/scripts/index.js',
 		output: {
 			file: 'dist/app.js',
 			format: 'iife',
@@ -98,37 +100,39 @@ export default [
 				exclude: 'node_modules/**',
 				ENV: JSON.stringify(process.env.NODE_ENV || 'development')
 			}),
-			eslint({
-				exclude: ['src/scss/**', 'dist/**']
-			}),
-			babel({
-				exclude: 'node_modules/**'
-			}),
-
-			isProd && uglify(),
-			!isProd &&
-				browsersync({
-					host: 'localhost',
-					port: 3000,
-					open: 'external',
-					files: ['**/*.php', '**/*.html', './dist/app.css', './dist/app.js'],
-					ghostMode: {
-						clicks: false,
-						scroll: true,
-						forms: {
-							submit: true,
-							inputs: true,
-							toggles: true
-						}
-					},
-					snippetOptions: {
-						rule: {
-							match: /<\/body>/i,
-							fn: (snippet, match) => `${snippet}${match}`
-						}
-					},
-					proxy: 'localhost'
-				})
+			!isTypeScript &&
+				eslint({
+					exclude: ['src/styles/**', 'dist/**']
+				}),
+			isTypeScript
+				? typescript()
+				: babel({
+						exclude: 'node_modules/**'
+				  }),
+			isProd
+				? uglify()
+				: browsersync({
+						host: 'localhost',
+						port: 3000,
+						open: 'external',
+						files: ['**/*.php', '**/*.html', './dist/app.css', './dist/app.js'],
+						ghostMode: {
+							clicks: false,
+							scroll: true,
+							forms: {
+								submit: true,
+								inputs: true,
+								toggles: true
+							}
+						},
+						snippetOptions: {
+							rule: {
+								match: /<\/body>/i,
+								fn: (snippet, match) => `${snippet}${match}`
+							}
+						},
+						proxy: 'localhost'
+				  })
 		],
 		external: 'stylelint'
 	}
