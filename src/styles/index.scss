@@ -1,5 +1,7 @@
 // External dependencies
-@import '~itscss';
+$font-size-base: 2rem;
+
+@import '~itscss/index.scss';
 
 // Sprite
 @import 'sprite';
