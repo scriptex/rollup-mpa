@@ -67,7 +67,7 @@
 		"rollup-plugin-replace": "2.2.0",
 		"rollup-plugin-sass": "1.2.2",
 		"rollup-plugin-sprite": "0.1.2",
-		"rollup-plugin-stylelint": "0.0.4",
+		"rollup-plugin-stylelint": "1.0.0",
 		"rollup-plugin-typescript": "1.0.1",
 		"rollup-plugin-uglify": "6.0.4",
 		"rollup-watch": "4.3.1",

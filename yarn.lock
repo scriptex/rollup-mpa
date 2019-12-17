@@ -1068,6 +1068,13 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@rollup/pluginutils@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-3.0.0.tgz#9978c9d4cd5d6908755362336f699633a3cee343"
+  integrity sha512-qBbGQQaUUiId/lBU9VMeYlVLOoRNvz1fV8HWY5tiGDpI2gdPZHbmOfCjzSdXPhdq3XOfyWvXEBlIPbnM3+9ogQ==
+  dependencies:
+    estree-walker "^0.6.1"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -8502,12 +8509,12 @@ rollup-plugin-sprite@0.1.2:
     spritesmith "^3.3.0"
     write "^1.0.3"
 
-rollup-plugin-stylelint@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-stylelint/-/rollup-plugin-stylelint-0.0.4.tgz#1c7b8fb896ed1e7b5e929c6f4d4d8c2c85b3d39a"
-  integrity sha512-+x1+AOPGl59ObL4X//VCQAu4URoTpLNkHE1/Sg9bg6tRAKS3/qbaunKgV9Tyo2aXOi5a7cyu9Ar2QXrS1W5Vug==
+rollup-plugin-stylelint@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-stylelint/-/rollup-plugin-stylelint-1.0.0.tgz#2532b3dda21c08cdee9bd898fbb947a23a91392c"
+  integrity sha512-0sgB+VAYx/+DEeosxnq3y3r8q0GLAm0KYzYVz0W4rXa0B4ggM8qHrdaU2mOw++SBTfzx6LRgSpMJcyKVcIxtzQ==
   dependencies:
-    rollup-pluginutils "^2.0.1"
+    "@rollup/pluginutils" "^3.0.0"
 
 rollup-plugin-typescript@1.0.1:
   version "1.0.1"
