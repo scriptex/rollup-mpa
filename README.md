@@ -1,13 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/scriptex/rollup-template.svg)](https://github.com/scriptex/rollup-template/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/scriptex/rollup-template.svg)](https://github.com/scriptex/rollup-template/commits/master)
-[![Build Status](https://travis-ci.org/scriptex/rollup-template.svg?branch=master)](https://travis-ci.org/scriptex/rollup-template)
-[![Analytics](https://ga-beacon.appspot.com/UA-83446952-1/github.com/scriptex/rollup-template/README.md)](https://github.com/scriptex/rollup-template/)
-
----
-:construction::construction:
-# This is still work in progress
-:construction::construction:
----
+:construction: :construction: :construction:
 
 # Rollup MPA
 
