@@ -46,7 +46,7 @@
 		"@babel/plugin-syntax-import-meta": "7.10.4",
 		"@babel/preset-env": "7.11.5",
 		"@three11/optisize": "1.1.0",
-		"autoprefixer": "9.8.6",
+		"autoprefixer": "10.0.0",
 		"create-pwa": "2.3.0",
 		"critical": "2.0.4",
 		"node-sass": "4.14.1",
