@@ -49,9 +49,9 @@ function autoversion($url) {
 
 	<?php critical_css(); ?>
 
-	<link rel="stylesheet" href="<?php autoversion('dist/app.css'); ?>" />
+	<link rel="stylesheet" href="<?php autoversion('/dist/app.css'); ?>" />
 </head>
 <body>
-	<script src="<?php autoversion('dist/app.js'); ?>" async defer></script>
+	<script src="<?php autoversion('/dist/app.js'); ?>" async defer></script>
 </body>
 </html>
