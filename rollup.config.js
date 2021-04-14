@@ -23,11 +23,7 @@ import flexbugsFixes from 'postcss-flexbugs-fixes';
 const isProd = process.env.NODE_ENV === 'production';
 const isTypeScript = fs.existsSync('./src/scripts/index.ts');
 
-const sha256 = data =>
-	crypto
-		.createHash('sha256')
-		.update(data, 'binary')
-		.digest('hex');
+const sha256 = data => crypto.createHash('sha256').update(data, 'binary').digest('hex');
 
 export default [
 	{
@@ -88,8 +84,7 @@ export default [
 		input: isTypeScript ? 'src/scripts/index.ts' : 'src/scripts/index.js',
 		output: {
 			file: 'dist/app.js',
-			format: 'iife',
-			sourceMap: isProd ? false : 'inline'
+			format: 'iife'
 		},
 		plugins: [
 			resolve({
