@@ -8,7 +8,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
 import commonjs from 'rollup-plugin-commonjs';
 import stylelint from 'rollup-plugin-stylelint';
-import { uglify } from 'rollup-plugin-uglify';
+import { terser } from 'rollup-plugin-terser';
 import { eslint } from 'rollup-plugin-eslint';
 import typescript from 'rollup-plugin-typescript';
 import browsersync from 'rollup-plugin-browsersync';
@@ -105,7 +105,7 @@ export default [
 						exclude: 'node_modules/**'
 				  }),
 			isProd
-				? uglify()
+				? terser()
 				: browsersync({
 						host: 'localhost',
 						port: 3000,
