@@ -1380,7 +1380,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@rollup/pluginutils@^3.0.0":
+"@rollup/pluginutils@^3.0.0", "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
   integrity sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
@@ -4016,11 +4016,6 @@ estraverse@^5.1.0, estraverse@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/estraverse/-/estraverse-5.2.0.tgz#307df42547e6cc7324d3cf03c155d5cdb8c53880"
   integrity sha512-BxbNGGNm0RyRYvUdHpIwv9IWzeM9XClbOxwoATuFdOE7ZE6wHL+HQ5T8hoPM+zHvmKzzsEqhgy0GrQ5X13afiQ==
-
-estree-walker@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.2.1.tgz#bdafe8095383d8414d5dc2ecf4c9173b6db9412e"
-  integrity sha1-va/oCVOD2EFNXcLs9MkXO225QS4=
 
 estree-walker@^0.6.1:
   version "0.6.1"
@@ -9265,13 +9260,13 @@ rollup-plugin-replace@2.2.0:
     magic-string "^0.25.2"
     rollup-pluginutils "^2.6.0"
 
-rollup-plugin-sass@1.2.5:
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.2.5.tgz#bedb33285d9d4a5d409995c1047fc4756fc3b32b"
-  integrity sha512-xcT3juWKm35wngDK+sXNSVF8fTy5gYpju8ycWBK0Lq7OXex2dAq8QLQsiawdWH91UNEIeDg9ruPmXHgFuEJV5Q==
+rollup-plugin-sass@1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.2.6.tgz#df5fe78edbfed0bd8c4f813d46918af33405d6be"
+  integrity sha512-tT1psOwPhoCRfwQqcDdtWaT9Gt0+G6UcxCqk6Ar3ewffSgrC2svI2mUxBbZNdFBKRcizhFQX2OxFStxlQaoXkQ==
   dependencies:
+    "@rollup/pluginutils" "^3.1.0"
     resolve "^1.5.0"
-    rollup-pluginutils "^1.3.1"
     sass "^1.7.2"
 
 rollup-plugin-sprite@0.1.2:
@@ -9310,14 +9305,6 @@ rollup-plugin-typescript@1.0.1:
   dependencies:
     resolve "^1.10.0"
     rollup-pluginutils "^2.5.0"
-
-rollup-pluginutils@^1.3.1:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-1.5.2.tgz#1e156e778f94b7255bfa1b3d0178be8f5c552408"
-  integrity sha1-HhVud4+UtyVb+hs9AXi+j1xVJAg=
-  dependencies:
-    estree-walker "^0.2.1"
-    minimatch "^3.0.2"
 
 rollup-pluginutils@^2.0.1, rollup-pluginutils@^2.5.0, rollup-pluginutils@^2.6.0, rollup-pluginutils@^2.7.1, rollup-pluginutils@^2.8.1, rollup-pluginutils@^2.8.2:
   version "2.8.2"
