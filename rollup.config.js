@@ -34,8 +34,7 @@ export default [
 		},
 		plugins: [
 			stylelint({
-				include: ['src/**/*.css', 'src/**/*.scss', 'src/**/*.sass'],
-				syntax: 'scss'
+				include: ['src/**/*.css', 'src/**/*.scss', 'src/**/*.sass']
 			}),
 			postcss({
 				extract: true,
