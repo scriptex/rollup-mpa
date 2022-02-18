@@ -38,7 +38,7 @@
 		"@babel/preset-env": "7.16.11",
 		"@three11/optisize": "2.0.0",
 		"autoprefixer": "10.4.2",
-		"browserslist": "4.19.1",
+		"browserslist": "4.19.2",
 		"create-pwa": "2.3.1",
 		"critical": "4.0.1",
 		"postcss": "8.4.6",
