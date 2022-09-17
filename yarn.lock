@@ -8207,10 +8207,10 @@ rollup-plugin-replace@2.2.0:
     magic-string "^0.25.2"
     rollup-pluginutils "^2.6.0"
 
-rollup-plugin-sass@1.2.15:
-  version "1.2.15"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.2.15.tgz#f73aae8a87bb678a0cdf6439b5de16fc0a83975a"
-  integrity sha512-WYvpVKcerUniBtsOBE0ph2bJtdQ+o/rq+ryPNg0w59L1+yD2mOR8E98diMYEOtk8XFrHwMkr6u7aAj189YEYyA==
+rollup-plugin-sass@1.12.16:
+  version "1.12.16"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.12.16.tgz#46fe4c1f73bc08289e3fb4b418fa49525888ba1b"
+  integrity sha512-hCX9v9/rkUQ+59ztH8BECSgPGcVSgI31TbsIaJtHdCtcUFoLxSXJDSNQhQnwJwX9FVXL3Uc15Zeti/K25Rwzjg==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     resolve "^1.5.0"
