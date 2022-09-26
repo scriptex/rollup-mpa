@@ -2,6 +2,18 @@
 	"name": "rollup-mpa",
 	"version": "1.0.0",
 	"description": "A starter template for web applications using Rollup as a module bundler",
+	"keywords": [],
+	"bugs": {
+		"url": "https://github.com/scriptex/rollup-mpa/issues",
+		"email": "hi@atanas.info"
+	},
+	"license": "MIT",
+	"author": "Atanas Atanasov <hi@atanas.info> (https://atanas.info)",
+	"funding": "https://github.com/sponsors/scriptex",
+	"repository": {
+		"type": "git",
+		"url": "github:scriptex/rollup-mpa"
+	},
 	"scripts": {
 		"clear": "rm -rf dist",
 		"start": "export NODE_ENV=development && yarn clear && rollup -c -w",
@@ -17,19 +29,6 @@
 		"rm-html": "rm index.html",
 		"prod": "yarn build && yarn html && yarn critical && yarn rm-html"
 	},
-	"keywords": [
-		"Rollup",
-		"Web App",
-		"Starter",
-		"Boilerplate"
-	],
-	"author": "Atanas Atanasov <scriptex.bg@gmail.com> (https://atanas.info)",
-	"repository": "https://github.com/scriptex/rollup-mpa",
-	"bugs": {
-		"url": "https://github.com/scriptex/rollup-mpa/issues",
-		"email": "scriptex.bg@gmail.com"
-	},
-	"license": "MIT",
 	"dependencies": {
 		"itscss": "3.1.0"
 	},
@@ -79,6 +78,5 @@
 		"> 1%",
 		"last 2 versions"
 	],
-	"main": "dist/main.js",
 	"private": true
 }
