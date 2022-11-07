@@ -38,7 +38,7 @@
 		"@three11/optisize": "2.0.0",
 		"autoprefixer": "10.4.13",
 		"browserslist": "4.21.4",
-		"create-pwa": "2.6.0",
+		"create-pwa": "2.6.1",
 		"critical": "5.0.3",
 		"postcss": "8.4.18",
 		"postcss-cli": "10.0.0",
