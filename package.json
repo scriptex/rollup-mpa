@@ -41,7 +41,7 @@
 		"create-pwa": "2.6.1",
 		"critical": "5.0.3",
 		"postcss": "8.4.19",
-		"postcss-cli": "10.0.0",
+		"postcss-cli": "10.1.0",
 		"postcss-flexbugs-fixes": "5.0.2",
 		"postcss-import": "15.0.0",
 		"postcss-normalize": "10.0.1",
