@@ -40,7 +40,7 @@
 		"browserslist": "4.21.4",
 		"create-pwa": "2.6.1",
 		"critical": "5.0.3",
-		"postcss": "8.4.19",
+		"postcss": "8.4.20",
 		"postcss-cli": "10.1.0",
 		"postcss-flexbugs-fixes": "5.0.2",
 		"postcss-import": "15.1.0",
