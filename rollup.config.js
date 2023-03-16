@@ -4,7 +4,7 @@ import crypto from 'crypto';
 
 import babel from 'rollup-plugin-babel';
 import replace from 'rollup-plugin-replace';
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
 import commonjs from 'rollup-plugin-commonjs';
 import stylelint from 'rollup-plugin-stylelint';
