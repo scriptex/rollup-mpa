@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"@babel/core": "7.21.4",
 		"@babel/preset-env": "7.21.4",
-    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-node-resolve": "15.0.2",
 		"@three11/optisize": "3.0.1",
 		"autoprefixer": "10.4.14",
 		"browserslist": "4.21.5",
