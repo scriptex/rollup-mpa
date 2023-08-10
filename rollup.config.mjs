@@ -2,15 +2,15 @@ import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 
-import babel from 'rollup-plugin-babel';
-import replace from 'rollup-plugin-replace';
+import babel from '@rollup/plugin-babel';
+import eslint from '@rollup/plugin-eslint';
+import terser from '@rollup/plugin-terser';
+import replace from '@rollup/plugin-replace';
 import resolve from '@rollup/plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
-import commonjs from 'rollup-plugin-commonjs';
+import commonjs from '@rollup/plugin-commonjs';
 import stylelint from 'rollup-plugin-stylelint';
-import { terser } from 'rollup-plugin-terser';
-import { eslint } from 'rollup-plugin-eslint';
-import typescript from 'rollup-plugin-typescript';
+import typescript from '@rollup/plugin-typescript';
 import browsersync from 'rollup-plugin-browsersync';
 import spritesmith from 'rollup-plugin-sprite';
 
@@ -33,7 +33,8 @@ export default [
 			format: 'es'
 		},
 		plugins: [
-			stylelint({
+			// @ts-ignore
+			stylelint.default({
 				include: ['src/**/*.css', 'src/**/*.scss', 'src/**/*.sass']
 			}),
 			postcss({
@@ -43,6 +44,7 @@ export default [
 					postcssUrl({
 						url(asset) {
 							const { pathname } = asset;
+							// @ts-ignore
 							const abspath = path.resolve(__dirname, pathname.substr(1));
 							const basename = path.basename(abspath).replace(/[^.]+/, sha256(path.basename(abspath)));
 							const destpath = path.join(__dirname, 'dist');
