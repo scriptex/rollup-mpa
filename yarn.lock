@@ -2972,10 +2972,10 @@ create-pwa@2.7.0:
     sharp "0.31.3"
     yargs "17.6.2"
 
-critical@6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/critical/-/critical-6.0.3.tgz#b6612d8abf42495e739d6fa1618ef3033938b53e"
-  integrity sha512-P7idKODsl3dhLub8eIPKHL5pjuOntBn7Qbmgc+1/L5bRYRSJqBITG+2Int13yeJStwQvscmVhWsnXf9+9lXs9A==
+critical@6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/critical/-/critical-6.0.4.tgz#4e29f22b30f38e2501a265478398c46d483e2d05"
+  integrity sha512-pd9E7ir/pu4dO38mIcfed+j6+IuQFvhmluGreGrzb7mBKZFBlnVXl4LeRbGKR7bj1Kzp1b4pTU6lKctkGIXD2g==
   dependencies:
     clean-css "^5.3.2"
     common-tags "^1.8.2"
@@ -3002,7 +3002,7 @@ critical@6.0.3:
     plugin-error "^2.0.1"
     postcss "^8.4.31"
     postcss-discard "^2.0.0"
-    postcss-image-inliner "^6.2.0"
+    postcss-image-inliner "^7.0.0"
     postcss-url "^10.1.3"
     replace-ext "^2.0.0"
     slash "^5.1.0"
@@ -3128,12 +3128,20 @@ css-tree@^1.1.2, css-tree@^1.1.3:
     mdn-data "2.0.14"
     source-map "^0.6.1"
 
-css-tree@^2.3.1:
+css-tree@^2.2.1, css-tree@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-2.3.1.tgz#10264ce1e5442e8572fc82fbe490644ff54b5c20"
   integrity sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==
   dependencies:
     mdn-data "2.0.30"
+    source-map-js "^1.0.1"
+
+css-tree@~2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-2.2.1.tgz#36115d382d60afd271e377f9c5f67d02bd48c032"
+  integrity sha512-OA0mILzGc1kCOCSJerOeqDxDQ4HOh+G8NbOJFOTgOCzpw7fCBubk0fEyxp8AgOL/jvLgYA/uV0cMbe43ElF1JA==
+  dependencies:
+    mdn-data "2.0.28"
     source-map-js "^1.0.1"
 
 css-url-parser@^1.1.3:
@@ -3211,6 +3219,13 @@ csso@^4.2.0:
   integrity sha512-wvlcdIbf6pwKEk7vHj8/Bkc0B4ylXZruLvOgs9doS5eOsOpuodOV2zJChSpkp+pRpYQLQMeF04nr3Z68Sta9jA==
   dependencies:
     css-tree "^1.1.2"
+
+csso@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/csso/-/csso-5.0.5.tgz#f9b7fe6cc6ac0b7d90781bb16d5e9874303e2ca6"
+  integrity sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==
+  dependencies:
+    css-tree "~2.2.0"
 
 cssstyle@^3.0.0:
   version "3.0.0"
@@ -4187,10 +4202,10 @@ filenamify@^2.0.0:
     strip-outer "^1.0.0"
     trim-repeated "^1.0.0"
 
-filesize@^9.0.11:
-  version "9.0.11"
-  resolved "https://registry.yarnpkg.com/filesize/-/filesize-9.0.11.tgz#4ac3a42c084232dd9b2a1da0107f32d42fcfa5e4"
-  integrity sha512-gTAiTtI0STpKa5xesyTA9hA3LX4ga8sm2nWRcffEa1L/5vQwb4mj2MdzMkoHoGv4QzfDshQZuYscQSf8c4TKOA==
+filesize@^10.1.0:
+  version "10.1.0"
+  resolved "https://registry.yarnpkg.com/filesize/-/filesize-10.1.0.tgz#846f5cd8d16e073c5d6767651a8264f6149183cd"
+  integrity sha512-GTLKYyBSDz3nPhlLVPjPWZCnhkd9TrrRArNcy8Z+J2cqScB7h2McAzR6NBX6nYOoWafql0roY8hrocxnZBv9CQ==
 
 fill-range@^2.1.0:
   version "2.2.4"
@@ -6034,6 +6049,11 @@ mdn-data@2.0.14:
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
   integrity sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==
 
+mdn-data@2.0.28:
+  version "2.0.28"
+  resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.28.tgz#5ec48e7bef120654539069e1ae4ddc81ca490eba"
+  integrity sha512-aylIc7Z9y4yzHYAJNuESG3hfhC+0Ibp/MAMiaOZgNv4pmEdFyfZhhhny4MNiAfWdBQ1RQ2mfDWmM1x8SvGyp8g==
+
 mdn-data@2.0.30:
   version "2.0.30"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.30.tgz#ce4df6f80af6cfbe218ecd5c552ba13c4dfa08cc"
@@ -7204,15 +7224,15 @@ postcss-gap-properties@^5.0.0:
   resolved "https://registry.yarnpkg.com/postcss-gap-properties/-/postcss-gap-properties-5.0.0.tgz#3bd77f3d51facb1da404b4edd72b8203929385a5"
   integrity sha512-YjsEEL6890P7MCv6fch6Am1yq0EhQCJMXyT4LBohiu87+4/WqR7y5W3RIv53WdA901hhytgRvjlrAhibhW4qsA==
 
-postcss-image-inliner@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/postcss-image-inliner/-/postcss-image-inliner-6.2.0.tgz#0b9a389f3b6423ce3068e6543e9c40af5dcaa9a5"
-  integrity sha512-RpWQxXnBE+TFU1WYdzIjgCYkRojSzCU7ktdA0owufCz+e5HCCbC/WpT8qAtRnd5ethVLpK8Bbdc8pAMKmuqMIQ==
+postcss-image-inliner@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-image-inliner/-/postcss-image-inliner-7.0.0.tgz#837f89ff0f01be3f659254a490eeac115ed3eed8"
+  integrity sha512-uiXmk0DKyUtJgfeFn3z/bsBHK+QToVibT1dbi6TTDk2yFwKdHzTw66k2tBmonlBfPNaGt9/4MbdwlvcLGUUVww==
   dependencies:
     asset-resolver "^3.0.5"
     debug "^4.3.4"
-    filesize "^9.0.11"
-    svgo "^2.8.0"
+    filesize "^10.1.0"
+    svgo "^3.0.2"
 
 postcss-image-set-function@^6.0.1:
   version "6.0.1"
@@ -9204,7 +9224,7 @@ svg-tags@^1.0.0:
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
   integrity sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==
 
-svgo@^2.5.0, svgo@^2.7.0, svgo@^2.8.0:
+svgo@^2.5.0, svgo@^2.7.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-2.8.0.tgz#4ff80cce6710dc2795f0c7c74101e6764cfccd24"
   integrity sha512-+N/Q9kV1+F+UeWYoSiULYo4xYSDQlTgb+ayMobAXPwMnLvop7oxKMo9OzIrX5x3eS4L4f2UHhc9axXwY8DpChg==
@@ -9216,6 +9236,18 @@ svgo@^2.5.0, svgo@^2.7.0, svgo@^2.8.0:
     csso "^4.2.0"
     picocolors "^1.0.0"
     stable "^0.1.8"
+
+svgo@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/svgo/-/svgo-3.0.2.tgz#5e99eeea42c68ee0dc46aa16da093838c262fe0a"
+  integrity sha512-Z706C1U2pb1+JGP48fbazf3KxHrWOsLme6Rv7imFBn5EnuanDW1GPaA/P1/dvObE670JDePC3mnj0k0B7P0jjQ==
+  dependencies:
+    "@trysound/sax" "0.2.0"
+    commander "^7.2.0"
+    css-select "^5.1.0"
+    css-tree "^2.2.1"
+    csso "^5.0.5"
+    picocolors "^1.0.0"
 
 symbol-tree@^3.2.4:
   version "3.2.4"
