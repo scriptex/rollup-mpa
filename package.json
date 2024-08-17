@@ -46,7 +46,7 @@
 		"autoprefixer": "10.4.20",
 		"browserslist": "4.23.3",
 		"create-pwa": "2.7.0",
-		"critical": "7.1.2",
+		"critical": "7.2.0",
 		"postcss": "8.4.41",
 		"postcss-cli": "11.0.0",
 		"postcss-flexbugs-fixes": "5.0.2",
