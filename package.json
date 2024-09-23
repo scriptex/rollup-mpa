@@ -36,7 +36,7 @@
 		"@babel/core": "7.25.2",
 		"@babel/preset-env": "7.25.4",
 		"@rollup/plugin-babel": "6.0.4",
-		"@rollup/plugin-commonjs": "26.0.1",
+		"@rollup/plugin-commonjs": "26.0.3",
 		"@rollup/plugin-eslint": "9.0.5",
 		"@rollup/plugin-node-resolve": "15.2.4",
 		"@rollup/plugin-replace": "5.0.7",
