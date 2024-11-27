@@ -1,22 +1,30 @@
 {
-	"extends": ["config:base", ":automergePatch", ":automergeMinor", ":automergeBranch", ":disableDependencyDashboard"],
-	"travis": {
-		"enabled": true
-	},
-	"assignees": ["@scriptex"],
-	"labels": ["dependencies"],
-	"rebaseWhen": "conflicted",
-	"vulnerabilityAlerts": {
-		"labels": ["security"],
-		"assignees": ["@scriptex"]
-	},
-	"major": {
-		"automerge": false
-	},
-	"packageRules": [
-		{
-			"groupName": "rollup",
-			"matchPackagePatterns": ["@rollup", "rollup"]
-		}
-	]
+  "extends": [
+    "config:base",
+    ":automergePatch",
+    ":automergeMinor",
+    ":automergeBranch",
+    ":disableDependencyDashboard",
+    "group:allNonMajor"
+  ],
+  "travis": {
+    "enabled": true
+  },
+  "assignees": ["@scriptex"],
+  "labels": ["dependencies"],
+  "rebaseWhen": "conflicted",
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "assignees": ["@scriptex"]
+  },
+  "major": {
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "groupName": "rollup",
+      "matchPackagePatterns": ["@rollup", "rollup"]
+    }
+  ],
+  "schedule": ["* * 9,23 * *"]
 }
