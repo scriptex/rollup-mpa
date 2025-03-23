@@ -33,7 +33,7 @@
 		"itscss": "3.1.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.26.9",
+		"@babel/core": "7.26.10",
 		"@babel/preset-env": "7.26.9",
 		"@rollup/plugin-babel": "6.0.4",
 		"@rollup/plugin-commonjs": "28.0.3",
@@ -48,7 +48,7 @@
 		"create-pwa": "2.7.0",
 		"critical": "7.2.1",
 		"postcss": "8.5.3",
-		"postcss-cli": "11.0.0",
+		"postcss-cli": "11.0.1",
 		"postcss-flexbugs-fixes": "5.0.2",
 		"postcss-import": "16.1.0",
 		"postcss-normalize": "13.0.1",
