@@ -9609,10 +9609,10 @@ stylelint-scss@^6.4.0:
     postcss-selector-parser "^7.0.0"
     postcss-value-parser "^4.2.0"
 
-stylelint@16.16.0:
-  version "16.16.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.16.0.tgz#ebecf27becd277aaf752e75de324023a1e13e486"
-  integrity sha512-40X5UOb/0CEFnZVEHyN260HlSSUxPES+arrUphOumGWgXERHfwCD0kNBVILgQSij8iliYVwlc0V7M5bcLP9vPg==
+stylelint@16.18.0:
+  version "16.18.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.18.0.tgz#8e992c3a7af1b2ebf7ea5ccf26c2415adbea64b4"
+  integrity sha512-OXb68qzesv7J70BSbFwfK3yTVLEVXiQ/ro6wUE4UrSbKCMjLLA02S8Qq3LC01DxKyVjk7z8xh35aB4JzO3/sNA==
   dependencies:
     "@csstools/css-parser-algorithms" "^3.0.4"
     "@csstools/css-tokenizer" "^3.0.3"
