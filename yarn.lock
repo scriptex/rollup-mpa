@@ -2569,15 +2569,15 @@ browser-sync@^2.26.14:
     ua-parser-js "^1.0.33"
     yargs "^17.3.1"
 
-browserslist@4.24.4, browserslist@^4.24.3, browserslist@^4.24.4:
-  version "4.24.4"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.24.4.tgz#c6b2865a3f08bcb860a0e827389003b9fe686e4b"
-  integrity sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==
+browserslist@4.24.5:
+  version "4.24.5"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.24.5.tgz#aa0f5b8560fe81fde84c6dcb38f759bafba0e11b"
+  integrity sha512-FDToo4Wo82hIdgc1CQ+NQD0hEhmpPjrZ3hiUgwgOG6IuTdlpr8jdjyG24P6cNP1yJpTLzS5OcGgSw0xmDU1/Tw==
   dependencies:
-    caniuse-lite "^1.0.30001688"
-    electron-to-chromium "^1.5.73"
+    caniuse-lite "^1.0.30001716"
+    electron-to-chromium "^1.5.149"
     node-releases "^2.0.19"
-    update-browserslist-db "^1.1.1"
+    update-browserslist-db "^1.1.3"
 
 browserslist@^4.0.0, browserslist@^4.21.4, browserslist@^4.21.9:
   version "4.21.10"
@@ -2598,6 +2598,16 @@ browserslist@^4.24.0:
     electron-to-chromium "^1.5.28"
     node-releases "^2.0.18"
     update-browserslist-db "^1.1.0"
+
+browserslist@^4.24.3, browserslist@^4.24.4:
+  version "4.24.4"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.24.4.tgz#c6b2865a3f08bcb860a0e827389003b9fe686e4b"
+  integrity sha512-KDi1Ny1gSePi1vm0q4oxSF8b4DR44GF4BbmS2YdhPLOEqd8pDviZOGH/GsmRwoWJ2+5Lr085X7naowMwKHDG1A==
+  dependencies:
+    caniuse-lite "^1.0.30001688"
+    electron-to-chromium "^1.5.73"
+    node-releases "^2.0.19"
+    update-browserslist-db "^1.1.1"
 
 bs-recipes@1.3.4:
   version "1.3.4"
@@ -2783,6 +2793,11 @@ caniuse-lite@^1.0.30001702:
   version "1.0.30001702"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001702.tgz#cde16fa8adaa066c04aec2967b6cde46354644c4"
   integrity sha512-LoPe/D7zioC0REI5W73PeR1e1MLCipRGq/VkovJnd6Df+QVqT+vT33OXCp8QUd7kA7RZrHWxb1B36OQKI/0gOA==
+
+caniuse-lite@^1.0.30001716:
+  version "1.0.30001717"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001717.tgz#5d9fec5ce09796a1893013825510678928aca129"
+  integrity sha512-auPpttCq6BDEG8ZAuHJIplGw6GODhjw+/11e7IjpnYCxZcW/ONgPs0KVBJ0d1bY3e2+7PRe5RCLyP+PfwVgkYw==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -3905,6 +3920,11 @@ electron-to-chromium@^1.4.477:
   version "1.4.490"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.490.tgz#d99286f6e915667fa18ea4554def1aa60eb4d5f1"
   integrity sha512-6s7NVJz+sATdYnIwhdshx/N/9O6rvMxmhVoDSDFdj6iA45gHR8EQje70+RYsF4GeB+k0IeNSBnP7yG9ZXJFr7A==
+
+electron-to-chromium@^1.5.149:
+  version "1.5.151"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.151.tgz#5edd6c17e1b2f14b4662c41b9379f96cc8c2bb7c"
+  integrity sha512-Rl6uugut2l9sLojjS4H4SAr3A4IgACMLgpuEMPYCVcKydzfyPrn5absNRju38IhQOf/NwjJY8OGWjlteqYeBCA==
 
 electron-to-chromium@^1.5.28:
   version "1.5.28"
@@ -9577,10 +9597,10 @@ stylelint-scss@^6.4.0:
     postcss-selector-parser "^7.0.0"
     postcss-value-parser "^4.2.0"
 
-stylelint@16.19.0:
-  version "16.19.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.19.0.tgz#bc10b4515dcceacd4aa68ccc0997724a477ee497"
-  integrity sha512-BJzc5mo/ez0H/ZSl3UbxGdkK/s0kFGsF5/k6IGu4z8wJ1qp49WrOS9RxswvcN6HMirt0g/iiJqOwLHTbWv49IQ==
+stylelint@16.19.1:
+  version "16.19.1"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-16.19.1.tgz#486b95fa7518a3077ee2802bc6dda2174bc097bb"
+  integrity sha512-C1SlPZNMKl+d/C867ZdCRthrS+6KuZ3AoGW113RZCOL0M8xOGpgx7G70wq7lFvqvm4dcfdGFVLB/mNaLFChRKw==
   dependencies:
     "@csstools/css-parser-algorithms" "^3.0.4"
     "@csstools/css-tokenizer" "^3.0.3"
@@ -10150,6 +10170,14 @@ update-browserslist-db@^1.1.1:
   dependencies:
     escalade "^3.2.0"
     picocolors "^1.1.0"
+
+update-browserslist-db@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/update-browserslist-db/-/update-browserslist-db-1.1.3.tgz#348377dd245216f9e7060ff50b15a1b740b75420"
+  integrity sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==
+  dependencies:
+    escalade "^3.2.0"
+    picocolors "^1.1.1"
 
 uri-js@^4.2.2:
   version "4.4.1"
