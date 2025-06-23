@@ -1542,10 +1542,10 @@
     "@babel/helper-module-imports" "^7.18.6"
     "@rollup/pluginutils" "^5.0.1"
 
-"@rollup/plugin-commonjs@28.0.3":
-  version "28.0.3"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-28.0.3.tgz#44c2cc7c955c6113b96696b55e6bc2446bd67913"
-  integrity sha512-pyltgilam1QPdn+Zd9gaCfOLcnjMEJ9gV+bTw6/r73INdvzf1ah9zLIJBm+kW7R6IUFIQ1YO+VqZtYxZNWFPEQ==
+"@rollup/plugin-commonjs@28.0.6":
+  version "28.0.6"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-commonjs/-/plugin-commonjs-28.0.6.tgz#32425f28832a1831c4388b71541ef229ef34cd4c"
+  integrity sha512-XSQB1K7FUU5QP+3lOQmVCE3I0FcbbNvmNT4VJSj93iUjayaARrTQeoRdiYQoftAJBLrR9t2agwAd3ekaTgHNlw==
   dependencies:
     "@rollup/pluginutils" "^5.0.1"
     commondir "^1.0.1"
@@ -1591,10 +1591,10 @@
     smob "^1.0.0"
     terser "^5.17.4"
 
-"@rollup/plugin-typescript@12.1.2":
-  version "12.1.2"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-12.1.2.tgz#ebaeec2e7376faa889030ccd7cb485a649e63118"
-  integrity sha512-cdtSp154H5sv637uMr1a8OTWB0L1SWDSm1rDGiyfcGcvQ6cuTs4MDk2BVEBGysUWago4OJN4EQZqOTl/QY3Jgg==
+"@rollup/plugin-typescript@12.1.3":
+  version "12.1.3"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-12.1.3.tgz#55e226efbfb0cd952988fce7beb2c8914c65ca02"
+  integrity sha512-gAx0AYwkyjqOw4JrZV34N/abvAobLhczyLkZ7FVL2UXPrO4zv8oqTfYT3DLBRan1EXasp4SUuEJXqPTk0gnJzw==
   dependencies:
     "@rollup/pluginutils" "^5.1.0"
     resolve "^1.22.1"
@@ -8622,10 +8622,10 @@ rollup-plugin-postcss@4.0.2:
     safe-identifier "^0.4.2"
     style-inject "^0.3.0"
 
-rollup-plugin-sass@1.15.2:
-  version "1.15.2"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.15.2.tgz#6d685679f051c7bf5b258c6a9df713fe5bebd7cd"
-  integrity sha512-YhTYW0rgvc/2VqpbGXAWrGQjexLcRJvvS5lpG15OAnhVqHDOGMlEXN8u4ctCpmdJiuk2nzxQDWEPbJkqJijb2g==
+rollup-plugin-sass@1.15.3:
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-sass/-/rollup-plugin-sass-1.15.3.tgz#798667792f3b760aa771af313b119df25ff5f32e"
+  integrity sha512-HPRjdUR/Ymu/v/H9qaPytqBAAYVN/5Agmu9RH+PMpTS22lcAvz3FWzqjs1cUaWh5ln1VvtwIcNykBOQkWkpUig==
   dependencies:
     "@rollup/pluginutils" "^3 || ^4 || ^5"
     resolve "^1.5.0"
