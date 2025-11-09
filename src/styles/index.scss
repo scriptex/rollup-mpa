@@ -1,6 +1,6 @@
 // External dependencies
-@import '~itscss';
+@use '~itscss' as *;
 
 // Sprite
-@import 'sprite';
+@use 'sprite' as *;
 @include sprites($spritesheet-sprites);
