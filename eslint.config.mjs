@@ -7,9 +7,8 @@ export default [
 			ecmaVersion: 'latest',
 			sourceType: 'module',
 			globals: {
-				ENV: 'readonly',
-				...js.environments.browser.globals,
-				...js.environments.node.globals
+				...globals.node,
+				...globals.browser
 			}
 		}
 	}
