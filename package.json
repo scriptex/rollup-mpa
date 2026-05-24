@@ -47,7 +47,7 @@
 		"autoprefixer": "10.5.0",
 		"browserslist": "4.28.2",
 		"create-pwa": "2.7.0",
-		"critical": "7.2.1",
+		"critical": "8.0.0",
 		"eslint": "10.4.0",
 		"globals": "17.6.0",
 		"postcss": "8.5.15",
